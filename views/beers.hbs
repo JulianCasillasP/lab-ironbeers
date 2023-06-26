@@ -1,0 +1,19 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Beers</title>
+  </head>
+  <body>
+    <h1>Beers.</h1>
+
+    {{#each beers}}
+      <div>
+        <img src='{{image_url}}' alt='{{name}}' />
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+        <p>{{tagline}}</p>
+      </div>
+    {{/each}}
+  </body>
+</html>
